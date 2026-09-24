@@ -52,6 +52,10 @@ img { max-width: 100%; }
   padding: 0 var(--space-lg);
 }
 
+.wrap.wrap-wide {
+  max-width: 1080px;
+}
+
 /* ---------- Header ---------- */
 
 header.site {
@@ -324,27 +328,16 @@ h2.section-title {
 }
 
 .shot {
-  width: 200px;
+  width: 170px;
+  flex: none;
 }
 
-.shot-box {
+.shot img {
+  display: block;
   width: 100%;
-  aspect-ratio: 1290 / 2796;
-  background: var(--bg-card);
-  border: 1px dashed var(--sage);
-  border-radius: 22px;
+  border-radius: 18px;
   box-shadow: var(--shadow-float);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.shot-box span {
-  font-size: 12px;
-  font-weight: 600;
-  color: var(--sage);
-  text-align: center;
-  padding: 0 var(--space-sm);
+  border: 1px solid var(--border-light);
 }
 
 /* ---------- Contact ---------- */
